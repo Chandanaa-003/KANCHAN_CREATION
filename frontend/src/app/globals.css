@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --color-ivory: #FAF7F2;
+  --color-cream: #F5EFE6;
+  --color-burgundy: #6B1A2A;
+  --color-burgundy-dark: #4A0F1C;
+  --color-rose: #C4788A;
+  --color-gold: #C9A84C;
+  --color-charcoal: #2C2C2C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-burgundy-dark);
+}
+
+::selection {
+  background-color: var(--color-burgundy);
+  color: white;
+}
